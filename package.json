@@ -1,16 +1,16 @@
 {
   "name": "template-aries-bootstrap-html",
   "version": "1.2.0",
-  "description": "A Bootstrap 4 template with sass, concatenation, minification, autoprefixer, sourcemaps, browser-sync, git and gulp task runner",
+  "description": "An IT professional with a passion for code, feminism, and good cup of tea.",
   "main": "index.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
-  "author": "wowthemesnet",
+  "author": "Casey Walters",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wowthemesnet/template-aries-bootstrap-html"
+    "url": "https://cwalters126.github.io/aries/index.html"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
