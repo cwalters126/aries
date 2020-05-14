@@ -1,7 +1,7 @@
 {
   "name": "template-aries-bootstrap-html",
   "version": "1.2.0",
-  "description": "An IT professional with a passion for code, feminism, and good cup of tea.",
+  "description": "An IT Professional with a Passion for Clean Code, Feminism, and Agile Processes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
