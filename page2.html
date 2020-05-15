@@ -1,0 +1,147 @@
+<!-- inject:partials/header.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Casey Walters</title>
+    <link rel="shortcut icon" href="assets/img/carrot-solid.ico">
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+      
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="assets/css/theme.css">
+      
+  </head>
+
+  <body>      
+      
+    <nav class="navbar navbar-expand-md navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">CASEY WALTERS</a>
+            <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsDefault">
+                <ul class="navbar-custom navbar-nav ml-auto">
+                    
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!--
+                    <li class="nav-item">
+                    <a class="nav-link" href="portfolio-item.html">Project</a>
+					</li>
+				-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Works</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">                        
+                        <a class="dropdown-item" href="page.html">Independent Study 2019</a>
+                        <a class="dropdown-item" href="page2.html">Neo4j</a>
+                       <!-- <a target="_blank" class="dropdown-item" href="https://www.wowthemes.net/themes/aries/">WP Version</a>-->
+                        </div>
+					</li>
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Hire me</a>
+                    </li>
+                    <!-- Download Nav bar Button
+                    <li class="nav-item">
+                    <a class="nav-link eventdl" href="https://github.com/wowthemesnet/template-aries-bootstrap-html/archive/master.zip"><i class="fa fa-cloud-download"></i> Download</a>
+                    </li>
+				-->
+                </ul>              
+                
+            </div>
+        </div>
+    </nav><!-- endinject -->
+
+<!-- Intro -->
+<div class="intro">
+<div class="intro-body">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<h1 class="brand-heading">Neo4j: The Advising Matrix</h1>
+				<p class="intro-text">
+                    “There’s a difference between knowing the path and walking the path.”
+                    <br>
+                        -	Morpheus
+				</p>
+				<a href="#pageid" class="btn btn-circle page-scroll">
+				<i class="fa fa-angle-double-down animated"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- Section -->
+<section id="pageid">
+<div class="container content-section">
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+            <h2 class="text-center">INTRODUCTION</h2>
+
+            <h4>:Technology:</h4>
+            
+                <p>Databases are organized collections of data. There are lots of different ways to organize this data. Graph databases focus on the relationships between the data rather than the data itself. A graph database is organized in a network. Data is represented in nodes, properties, tags, and edges. Advantages of graph databases are performance, flexibility, and agility. Graph databases are simple and have fast retrieval. They are scalable and adapt to new business requirements much easier than databases using the relational model. The database schema can be altered, where a relational database would need to follow the schema it was built using. Neo4j.com lists 5 areas graph databases are being used: fraud detection, real time recommendation engines, master data management, network/IT operations, and identity and access management.</p>
+                <p>Graph databases do not have an official query language, but many use SPARQL, like Amazon Neptune, IBM DB2, and Allegro. Neo4j uses Cypher, which “is a declarative, SQL-inspired language for describing visual patterns in graphs using ASCII-Art syntax” ( Cypher Query Language Developer Guides & Tutorials, n.d.). </p>
+                <p>Current attitudes in business seem to align with the idea that one should choose a database based off the data model, rather than try to fit the data into a relational model. Recently, graph databases have seen a surge in popularity because they can handle some of the complex questions easier than a relational database would.</p>
+                <p>For example, say you want to know the name of that one romantic comedy that had the actor/writer and the actor that played the lead in “The Matrix”.</p>
+                <p>With the graph model, you would first locate the “The Matrix” movie node, as seen in figure 1.0. </p>
+                <p>You would then follow the “lead” edge to find the node “Keanu Reeves”, the actor who played the lead in The Matrix.</p>
+                <p>You would find all the movies Keanu Reeves has also acted in, and then filter those movies with the category “romantic comedies”. </p>
+                <p>Then you would take those results and write a query that looks for a movie that had an actor lead and write in the movie. </p>
+                <p>This would involve plenty of complex queries in a relational model but is rather simple with the graph model. However, there are plenty of situations where a SQL database makes more sense for the business.</p>
+                
+            <h4:>Business_Problem:</h4:>
+                
+                <p>Currently, the OMIS Academic Advisor meets face to face with dozens of students a day, discussing their schedules for next semester. There are a fixed number of classes; and only so many unique combinations of courses being offered, enrolled in, and counting towards specific degrees. There is no true data stored on the courses at NIU, even a CSV file with the course names, numbers, and descriptions. Instead, we were told to use the course catalog. </p>
+                <p>Without a logical way to store this data, we are forced to rely on human brain power to perform these complex queries quickly and accurately every time. </p>
+                
+                
+            <h4>:Proposed_Business_Solution:</h4>
+            
+                <p>By creating a graph database to represent the relationships between the courses in the OMIS department, we are providing a faster, more accurate system for students to use when trying to select their classes. This also removes stress on the academic advisor. By having students use this system for easy course scheduling questions, we free up time the academic advisor can now use to do other things in their job description.</p> 
+                <p><img src="https://images.unsplash.com/photo-1510229681557-8489ef190a94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b79de1a44f85cd65d299c4667cc0a29f&auto=format&fit=crop&w=900&q=80"></p>
+                <p>This information is incredibly important to make sure the university is providing female students with the experiences they need to be successful in operations and information management. By performing this evaluation, the researcher hopes to identify trends that positively and negatively affect students and provide answers on how to improve as a department and a college as a whole. </p>
+    
+                <div class="text-center">
+                <a href="personalized/FinalPaperOMIS695.pdf" class="btnghost"><i class="fa fa-download"></i> Full Article</a>
+            </div>
+        </div>
+	</div>
+</div>
+</section>
+
+<!-- inject:partials/footer.html -->
+<footer>
+<div class="container text-center">
+    <p class="credits">
+        Copyright &copy; Casey Walters 2018<br/>
+        <a class="highlightlink" target="_blank" href="https://www.wowthemes.net">"Aries" Template by WowThemes.net</a>
+    </p>
+</div>
+</footer>
+
+<!-- build:js -->
+<script src="assets/js/main.js"></script>
+<!-- endbuild -->
+
+<script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>
+<!-- endinject -->
