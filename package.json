@@ -1,0 +1,29 @@
+{
+  "name": "template-aries-bootstrap-html",
+  "version": "1.2.0",
+  "description": "An IT Professional with a Passion for User Experience, Agile Processes, and Intersectional Feminism.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "author": "Casey Walters",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://cwalters126.github.io/aries/index.html"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-inject": "^4.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
