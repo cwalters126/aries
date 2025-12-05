@@ -518,28 +518,77 @@ section {
   background-repeat: no-repeat;
 }
 
+/* === Hero / intro background adjustments === */
+.intro {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Keep intro inner layout constrained */
+.intro-body,
+.intro .container,
+.intro .row,
+.intro [class^="col-"],
+.intro [class*=" col-"] {
+  max-width: 100%;
+}
+
 /* === Make hero + text friendlier on phones === */
 @media (max-width: 576px) {
   .intro {
     background-attachment: scroll; /* avoid parallax weirdness on mobile */
     min-height: 100vh;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 1rem;            /* vertical + modest horizontal padding */
+  }
+
+  .intro .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .intro .row {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .brand-heading {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.2;
-	  letter-spacing: 0.03em;
-    word-break: break-word;
-	  white-space: normal;
+    letter-spacing: 0.03em;
+    white-space: normal;           /* allow wrapping */
+    overflow-wrap: break-word;     /* wrap long bits */
+    word-wrap: break-word;
     text-align: center;
+    margin: 0 auto;
   }
 
   .intro-text {
     font-size: 1rem;
   }
 }
+
+/* Ensure page never scrolls horizontally */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make sure long titles anywhere don't cause overflow */
+.brand-heading,
+h1,
+h2 {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
 /* Gallery images responsive */
 .gallery img {
   max-width: 100%;
@@ -554,35 +603,4 @@ section {
     max-width: 100%;
     margin-bottom: 1rem;
   }
-}
-/* Ensure intro section stays within the viewport */
-.intro {
-  width: 100%;
-  overflow-x: hidden;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/* Tidy up spacing inside intro on small screens */
-@media (max-width: 576px) {
-  .intro {
-    padding: 3rem 1rem;   /* vertical + a bit of horizontal padding */
-    background-attachment: scroll;
-  }
-
-  .intro .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .intro .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
 }
