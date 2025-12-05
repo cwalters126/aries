@@ -528,9 +528,10 @@ section {
   }
 
   .brand-heading {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     word-break: break-word;
+	  white-space: nowrap;
     text-align: center;
   }
 
@@ -553,3 +554,4 @@ section {
     margin-bottom: 1rem;
   }
 }
+
