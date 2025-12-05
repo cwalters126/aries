@@ -528,10 +528,11 @@ section {
   }
 
   .brand-heading {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.2;
+	  letter-spacing: 0.03em;
     word-break: break-word;
-	  white-space: nowrap;
+	  white-space: normal;
     text-align: center;
   }
 
@@ -554,4 +555,34 @@ section {
     margin-bottom: 1rem;
   }
 }
+/* Ensure intro section stays within the viewport */
+.intro {
+  width: 100%;
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
+/* Tidy up spacing inside intro on small screens */
+@media (max-width: 576px) {
+  .intro {
+    padding: 3rem 1rem;   /* vertical + a bit of horizontal padding */
+    background-attachment: scroll;
+  }
+
+  .intro .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .intro .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
