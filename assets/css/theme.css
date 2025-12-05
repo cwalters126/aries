@@ -509,4 +509,47 @@ section {
 	border-bottom:2px solid lightseagreen;
 	outline:0;
 	outline: none;
+
+}
+/* === Hero / intro background adjustments === */
+.intro {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* === Make hero + text friendlier on phones === */
+@media (max-width: 576px) {
+  .intro {
+    background-attachment: scroll; /* avoid parallax weirdness on mobile */
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .brand-heading {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+}
+/* Gallery images responsive */
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* On phones, make each image full width */
+@media (max-width: 576px) {
+  .gallery .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
 }
