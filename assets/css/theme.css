@@ -628,3 +628,106 @@ h2 {
 .intro .intro-body{
   overflow-x: hidden;
 }
+/* FABRIC PAGE — main content links only */
+#pageid .col-md-8 a {
+	color: #1ba39c !important;
+	text-decoration: none !important;
+	border-bottom: 1px dashed currentColor;
+	padding-bottom: 1px;
+	font-weight: 500;
+}
+
+	/* Hover / focus */
+	#pageid .col-md-8 a:hover,
+	#pageid .col-md-8 a:focus {
+		border-bottom-style: solid;
+		color: #148f77 !important;
+	}
+/* Fabric page images + captions */
+#pageid .content-figure {
+	text-align: center;
+	margin: 2rem auto;
+}
+
+#pageid .content-image {
+	max-width: 60%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	cursor: zoom-in;
+}
+
+#pageid figcaption {
+	font-size: 0.9rem;
+	color: #666;
+	margin-top: 0.5rem;
+	font-style: italic;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+	#pageid .content-image {
+		max-width: 90%;
+	}
+}
+/* Hover zoom hint */
+#pageid .content-figure a {
+	position: relative;
+	display: inline-block;
+}
+
+	#pageid .content-figure a::after {
+		content: "Click to enlarge";
+		position: absolute;
+		bottom: 8px;
+		right: 10px;
+		font-size: 0.75rem;
+		background: rgba(0, 0, 0, 0.65);
+		color: #fff;
+		padding: 4px 8px;
+		border-radius: 4px;
+		opacity: 0;
+		transition: opacity 0.2s ease-in-out;
+		pointer-events: none;
+	}
+
+	#pageid .content-figure a:hover::after {
+		opacity: 1;
+	}
+
+#pageid .content-image {
+	cursor: zoom-in;
+}
+/* Floating content images */
+#pageid .float-left {
+	float: left;
+	margin: 0.5rem 1.5rem 1rem 0;
+	max-width: 45%;
+}
+
+#pageid .float-right {
+	float: right;
+	margin: 0.5rem 0 1rem 1.5rem;
+	max-width: 45%;
+}
+
+	/* Ensure captions stay aligned */
+	#pageid .float-left figcaption,
+	#pageid .float-right figcaption {
+		text-align: center;
+	}
+
+/* Clear floats after sections */
+#pageid .clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+@media (max-width: 768px) {
+	#pageid .float-left,
+	#pageid .float-right {
+		float: none;
+		max-width: 90%;
+		margin: 1.5rem auto;
+	}
+}
