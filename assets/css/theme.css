@@ -731,3 +731,23 @@ h2 {
 		margin: 1.5rem auto;
 	}
 }
+/* === Navbar dropdowns open on hover (desktop only) === */
+@media (min-width: 768px) {
+	.navbar .dropdown:hover > .dropdown-menu {
+		display: block;
+	}
+}
+.dropdown-menu {
+	margin-top: 0;
+	border-radius: 0;
+}
+
+.dropdown-item {
+	font-weight: 300;
+	letter-spacing: 0.5px;
+}
+
+	.dropdown-item:hover {
+		background-color: rgba(27,163,156,0.1);
+		color: #1ba39c;
+	}
