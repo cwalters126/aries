@@ -382,6 +382,15 @@ p.lead {
 	color:#fff;
 	border:2px solid #333;
 }
+
+/* Ensure full visible border on ghost buttons */
+a.btnghost {
+	box-sizing: border-box;
+	border: 2px solid #333;
+}
+
+
+
 .highlightlink {
 	border-bottom:1px dashed #ccc;
 	font-weight:400;
@@ -628,14 +637,27 @@ h2 {
 .intro .intro-body{
   overflow-x: hidden;
 }
-/* FABRIC PAGE — main content links only */
-#pageid .col-md-8 a {
-	color: #1ba39c !important;
-	text-decoration: none !important;
+
+/* Content links ONLY (paragraphs + lists) */
+#pageid .col-md-8 p a,
+#pageid .col-md-8 li a {
+	color: #1ba39c;
+	text-decoration: none;
 	border-bottom: 1px dashed currentColor;
 	padding-bottom: 1px;
 	font-weight: 500;
 }
+/* Never underline buttons (text underline only) */
+a.btn,
+a.btnghost {
+	text-decoration: none !important;
+}
+
+	/* Remove dashed underline from buttons */
+	#pageid .col-md-8 a.btn {
+		border-bottom: none !important;
+		padding-bottom: 0;
+	}
 
 	/* Hover / focus */
 	#pageid .col-md-8 a:hover,
@@ -751,3 +773,4 @@ h2 {
 		background-color: rgba(27,163,156,0.1);
 		color: #1ba39c;
 	}
+
